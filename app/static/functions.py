@@ -40,10 +40,10 @@ def exploratory_hist(df):
 def impute(df):
     cat_list=['Bearer Id','Start','End','IMSI','MSISDN/Number','IMEI','Last Location Name','Handset Manufacturer','Handset Type']
     for i in df.columns:
-        if i in cat_list:
-            df[i]=df[i].fillna(df[i].mode())
-        else:
+        if i not in cat_list:
             df[i]=df[i].fillna(df[i].mean())
+        else:
+            df[i]=df[i].fillna(df[i].value_counts().index[0])
     return df
 
 def normalizer(df):
