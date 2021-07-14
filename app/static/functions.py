@@ -59,3 +59,14 @@ def date_time(df):
     df['Start']=pd.to_datetime(df['Start'], infer_datetime_format=True)
     df['End']=pd.to_datetime(df['End'], infer_datetime_format=True)
     return df
+
+def create_options(df):
+    """Creates options in the format that dash needs
+     """
+    options = []
+    for i in df.columns:
+        options.append({'label': "{}: {}".format(str(i),df[i].dtype), 'value': str(i)})
+    return options
+
+
+
