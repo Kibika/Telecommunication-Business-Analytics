@@ -148,7 +148,11 @@ def overview_page( value):
     Duration= df_filtered['Dur. (ms)'].sum()
     Download_Data=df_filtered['Total DL (Bytes)'].sum()
     Upload_Data = df_filtered['Total UL (Bytes)'].sum()
-    fig1 = px.pie(app_filtered, values=np.array(app_filtered.iloc[0]), names=app_filtered.columns, title='Data Used Per Application')
+    values=np.array(app_filtered.iloc[0])
+    #fig1 = px.pie(app_filtered, values=np.array(app_filtered)[0], names=app_filtered.columns, title='Data Used Per Application')
+    fig1 = px.pie(app_filtered, values=values, names=app_filtered.columns, title='Data Used Per Application')
+
+
     return dcc.Markdown("**{}**".format(xDR_Count),style={"font-size":"xx-large"}),dcc.Markdown(
         "**{}**".format(Duration),style={"font-size":"xx-large"}),dcc.Markdown(
         "**{}**".format(Download_Data), style={"font-size": "xx-large"}),dcc.Markdown(
