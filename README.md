@@ -1,4 +1,5 @@
 # Telecom_Analytics
+Summary of the report and presentation done for analysis of user interaction.
 ## Recommendation
 Buy TellCo based on the strength of the infrastructure and increase user engagement through designing customized experiences for customers based on their needs, the most feasible methods identified to drive this is introducing price differentiation and providing offers based on use of the network.
 ## Synthesis
