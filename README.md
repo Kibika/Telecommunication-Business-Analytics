@@ -7,6 +7,7 @@ There is an opportunity to derive value from greater user engagement with the ne
 1. User Engagement
 
 There are two major clusters in the data based on duration and data used and they show majority of the users belong to the low data usage and small duration spent on the network.
+
 2. User Experience
 
 The network is able to support the needs of the users who majorly use it for gaming.
