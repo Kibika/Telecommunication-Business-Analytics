@@ -5,6 +5,7 @@ Buy TellCo based on the strength of the infrastructure and increase user engagem
 There is an opportunity to derive value from greater user engagement with the network with the great quality of infrastructure in place.
 ## Analysis
 1. User Engagement
+
 There are two major clusters in the data based on duration and data used and they show majority of the users belong to the low data usage and small duration spent on the network.
 2. User Experience
 
